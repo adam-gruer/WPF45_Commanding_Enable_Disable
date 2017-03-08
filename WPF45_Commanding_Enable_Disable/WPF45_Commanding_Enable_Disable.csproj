@@ -69,7 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModelClasses\DataAccess.cs" />
-    <Compile Include="ModelClasses\myModels.cs" />
+    <Compile Include="ModelClasses\PersonInfo.cs" />
+    <Compile Include="ModelClasses\PersonsDataStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

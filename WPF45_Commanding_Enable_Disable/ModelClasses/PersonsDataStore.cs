@@ -3,20 +3,6 @@
 namespace WPF45_Commanding_Enable_Disable.ModelClasses
 {
     /// <summary>
-    /// The Class defining Properties for PersonInfo
-    /// </summary>
-    public class PersonInfo
-    {
-        public int PersonId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-
-        public string City { get; set; }
-        public int Age { get; set; }
-
-    }
-
-    /// <summary>
     /// The person data store class
     /// </summary>
     public class PersonsDataStore : ObservableCollection<PersonInfo>
@@ -36,16 +22,4 @@ namespace WPF45_Commanding_Enable_Disable.ModelClasses
             Add(new PersonInfo() { PersonId = 11, FirstName = "Anil", LastName = "Kulkarni", Age = 50, City = "Yavatmal" });
         }
     }
-
-    /// <summary>
-    /// The DataAccess class
-    /// </summary>
-    public class DataAccess
-    {
-        public ObservableCollection<PersonInfo> GetPersonData()
-        {
-            return new PersonsDataStore();
-        }
-    }
-
 }
