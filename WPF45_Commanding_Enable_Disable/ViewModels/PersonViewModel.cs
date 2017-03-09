@@ -22,7 +22,9 @@ namespace WPF45_Commanding_Enable_Disable.ViewModels
         {
             if (PropertyChanged != null)
             {
+#pragma warning disable IDE1005 // Delegate invocation can be simplified.
                 PropertyChanged(this, new PropertyChangedEventArgs(pName));
+#pragma warning restore IDE1005 // Delegate invocation can be simplified.
             }
         }
 

@@ -40,7 +40,9 @@ namespace WPF45_Commanding_Enable_Disable.Commands
         {
             if (ExecuteAction != null)
             {
+#pragma warning disable IDE1005 // Delegate invocation can be simplified.
                 ExecuteAction(parameter);
+#pragma warning restore IDE1005 // Delegate invocation can be simplified.
             }
         }
     }
